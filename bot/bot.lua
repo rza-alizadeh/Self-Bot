@@ -242,7 +242,7 @@ function create_config( )
      "webshot",
      },
     sudo_users = {221231811},
-    admin_users = {},
+    admin_users = {92120810},
     disabled_channels = {}
   }
   serialize_to_file(config, './data/config.lua')
