@@ -1,4 +1,4 @@
-local function run(msg, matches)
+اlocal function run(msg, matches)
   if is_sudo(msg) then
   local text = matches[1]
   local b = 1
@@ -11,14 +11,14 @@ local function run(msg, matches)
   file:write(text)
   file:flush()
   file:close()
-  return "Done ;-)" 
+  return "★با موفقیت انجام شد★" 
 end
 end 
 return {
   description = "a Usefull plugin for sudo !",  
   usage = "A plugins to add Another plugins to the server",
   patterns = {
-    "^#addplug +(.+) (.*)$"
+    "^[!#/]addplug +(.+) (.*)$"
   },
   run = run
 }
