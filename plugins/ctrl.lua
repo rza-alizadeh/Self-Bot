@@ -23,16 +23,17 @@ end
 local function enable_channel(receiver, to_id)
 	if not _config.disabled_channels then
 		_config.disabled_channels = {}
+		
 	end
 
 	if _config.disabled_channels[receiver] == nil then
-		return 'روشنم باو :/'
+		return 'روشنم ☆'
 	end
 	
 	_config.disabled_channels[receiver] = false
 
 	save_config()
-	return 'روشنم باو:D'
+	return  'روشنم ☆'
 end
 
 local function disable_channel(receiver, to_id)
@@ -43,7 +44,7 @@ local function disable_channel(receiver, to_id)
 	_config.disabled_channels[receiver] = true
 
 	save_config()
-	return 'Bot was off ;-/'
+	return 'off shodam :)'
 end
 
 local function pre_process(msg)
