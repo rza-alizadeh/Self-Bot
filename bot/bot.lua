@@ -241,8 +241,8 @@ function create_config( )
      "weather",
      "webshot",
      },
-    sudo_users = {221231811},
-    admin_users = {92120810},
+    sudo_users = {92120810},
+    admin_users = {},
     disabled_channels = {}
   }
   serialize_to_file(config, './data/config.lua')
